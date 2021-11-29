@@ -1,0 +1,27 @@
+body{
+    overflow-x:hidden;
+}
+span{
+    color: red;
+}
+.form{
+    border: 1px solid black;
+    position: relative;
+    left: 300px;
+    width: fit-content;
+    text-align: center;
+    padding: 30px;
+}
+table{
+   
+    /* border: 1px;
+    position: relative;
+    left: 30%;
+    margin: 10px;
+     */
+
+    
+}
+table td{
+    padding:10px;
+}

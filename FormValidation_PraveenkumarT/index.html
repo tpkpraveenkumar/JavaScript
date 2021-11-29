@@ -1,0 +1,141 @@
+<html>
+
+<head>
+    <title>
+        Form validation
+    </title>
+    <link rel="stylesheet" href="Style/formStyle.css">
+    <script type="text/javascript" src="javaScript/formvalid.js"></script>
+</head>
+
+<body>
+    <!-- <form> -->
+        <div class="form">
+        <table>
+
+            <h1>Submit your application</h1>
+            <h3>Personal information</h3>
+            <tr>
+                <td>
+                    <label for="name">Name as per ID proof<span> *</span></label><br>
+                    <input type="text" id="name">
+                    <label  id="namevalid1" style="color: red;visibility: hidden;">required</label><br>
+                    <label  id="valid1" style="color: red;visibility: hidden;">please enter the valid name</label>
+                </td>
+                <td>
+                    <label for="fathername">Father's Name<span> *</span></label><br>
+                    <input type="text" id="fathername">
+                    <label  id="namevalid2" style="color: red;visibility: hidden;">required</label><br>
+                    <label  id="valid2" style="color: red;visibility: hidden;">please enter the valid name</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="emailid">Email<span> *</span></label><br>
+                    <input type="text" id="emailid">
+                    <label  id="namevalid3" style="color: red;visibility: hidden;">required</label><br>
+                    <label  id="valid3" style="color: red;visibility: hidden;">please enter a valid Email Address</label>
+                </td>
+                <td>
+                    <label for="dateofBirth">Date of Birth<span> *</span></label><br>
+                    <input type="text" id="dateofBirth">
+                    <label  id="namevalid4" style="color: red;visibility: hidden;">required</label><br>
+                    <label  id="valid4" style="color: red;visibility: hidden;">please enter correct date of birth</label>
+                </td>
+                <td>
+                    <label for="mobilNo">Mobile No<span> *</span></label><br>
+                    <input type="text" id="mobilNo">
+                    <label  id="namevalid5" style="color: red;visibility: hidden;">required</label><br>
+                    <label  id="valid5" style="color: red;visibility: hidden;">please enter valid no</label>
+                </td>
+            </tr>
+
+            <!--Current Address-->
+            <tr>
+                <td>
+                    <label>Current Address<span> *</span></label><br>
+
+                    <input type="text" id="addressline1" placeholder="Address line 1">
+                    <label  id="namevalid6" style="color: red;visibility: hidden;">required</label><br>
+                    <label  id="valid6" style="color: red;visibility: hidden;">please enter a valid address</label>
+                </td>
+                <td>
+                    <input type="text" id="addressline2" placeholder="Address line 2">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="text" id="city" placeholder="City">
+                    <label  id="namevalid7" style="color: red;visibility: hidden;">required</label><br>
+                    <label  id="valid7" style="color: red;visibility: hidden;">please enter a valid city</label>
+                </td>
+                <td>
+                    <select id="state">
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Andra">Andra</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="text" id="zipcode" placeholder="Zipcode">
+                    <label  id="namevalid8" style="color: red;visibility: hidden;">required</label><br>
+                    <label  id="valid8" style="color: red;visibility: hidden;">please enter a correct zipcode</label>
+                </td>
+            </tr>
+
+            </tr>
+
+            <!--Permanent Address-->
+            <tr>
+                <td>
+                    <label>Permanent Address<span> *</span></label>
+                    <input onchange="fill()" type="checkbox" id="chbox" name="checkbox">
+                    <label id="chbox">Same as Current Address</label><br>
+
+
+                    <input type="text" id="address1" placeholder="Address line 1">
+                </td>
+                <td>
+                    <input type="text" id="address2" placeholder="Address line 2">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="text" id="city1" placeholder="City">
+                </td>
+                <td>
+                    <select id="state1">
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Andra">Andra</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="text" id="zipcode1" placeholder="Zipcode">
+                </td>
+            </tr>
+        </table>
+
+        <!--image Info-->
+        <p>Upload Profile Photo<span> *</span> (jPG/PNG format only)<br>
+            Please upload a photo of yuorself. Your face should be clearly visible. Make sure the image size dose
+            not exceed 500KB.
+
+        </p><br>
+
+        <!--Upload imgage-->
+        <input type="file" id="Uphoto" value="UPLOAD PHOTO"><br>
+        <label  id="namevalid9" style="color: red;visibility: hidden;">upload your photo</label><br>
+        <!-- <label  id="valid9" style="color: red;visibility: hidden;"></label> -->
+
+        <!--validate Button-->
+        <button onclick="Validate()">NEXT</button>
+    </div>
+    <!-- </form> -->
+</body>
+
+</html>
